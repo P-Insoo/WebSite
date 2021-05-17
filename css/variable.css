@@ -1,0 +1,15 @@
+:root {
+  /* Color */
+  --background-color: #263343;
+  --logo-color: #d49466;
+  --font-color: #f0f0f5;
+  /* Size */
+  /* Font */
+  /* Font Size */
+  --font-Large: 24px;
+  --font-medium: 16px;
+  --font-small: 16px;
+  --font-micro: 12px;
+  /* Padding Size */
+  --spacing: 8px 12px;
+}

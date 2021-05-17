@@ -1,0 +1,95 @@
+:root {
+  /* Color */
+  --background-color: #263343;
+  --logo-color: #d49466;
+  --font-color: #f0f0f5;
+  /* Size */
+  /* Font */
+  /* Font Size */
+  --font-Large: 24px;
+  --font-medium: 16px;
+  --font-small: 16px;
+  --font-micro: 12px;
+  /* Padding Size */
+  --spacing: 8px 12px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+/* nav container */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+/* logo */
+.navbar__logo {
+  font-size: var(--font-Large);
+}
+.navbar__logo i {
+  color: var(--logo-color);
+}
+
+/* menu */
+.navbar__menu {
+  display: flex;
+}
+.navbar__menu li {
+  padding: var(--spacing);
+}
+.navbar__menu li:hover {
+  border-radius: 5px;
+  background-color: var(--logo-color);
+}
+
+/* icons */
+.navbar__icons {
+  display: flex;
+}
+.navbar__icons li {
+  padding: var(--spacing);
+}
+
+/* toggleBtn */
+.navbar__toggleBtn {
+  position: absolute;
+  right: 32px;
+  font-size: var(--font-Large);
+  color: var(--logo-color);
+  display: none;
+}
+
+/* ******************** 미디어쿼리 ******************* */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar__icons {
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar__toggleBtn {
+    display: block;
+  }
+  .navbar__menu.active {
+    display: none;
+  }
+  .navbar__icons.active {
+    display: none;
+  }
+}
